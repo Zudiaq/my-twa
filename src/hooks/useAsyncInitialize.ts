@@ -1,6 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, DependencyList } from "react";
 
-export function useAsyncInitialize<T>(func: () => Promise<T>, deps: any[] = []) {
+export function useAsyncInitialize<T>(
+  func: () => Promise<T>,
+  deps: DependencyList = []
+) {
   const [state, setState] = useState<T | undefined>();
   useEffect(() => {
     (async () => {
