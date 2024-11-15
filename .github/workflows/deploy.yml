@@ -32,9 +32,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    permissions:
-      actions: write
-      contents: read
+    permissions: write-all
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
