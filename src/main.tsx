@@ -9,5 +9,5 @@ const manifestUrl = 'https://Zudiaq.github.io/my-twa/public/tonconnect-manifest.
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <TonConnectUIProvider manifestUrl={manifestUrl}>
     <App />
-  </TonConnectUIProvider>,
-)
+  </TonConnectUIProvider>
+);
